@@ -47,4 +47,25 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+
+@media (min-width: 768px) {
+    .contenedor-flex {
+        display: flex;
+        gap: 2rem;
+    }
+    .contenido-principal {
+        width: 60%;
+    }
+    
+    .sidebar-1 {
+        order: -1;
+        width: 20%;
+    }
+    
+    .sidebar-2 {
+        width: 20%;
+    }
+    
+}
+

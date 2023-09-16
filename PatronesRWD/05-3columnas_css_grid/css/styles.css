@@ -48,4 +48,25 @@ p {
 }
 
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+
+@media (min-width: 768px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template-areas: "izquierda contenido derecha"; /* para layouts mas complejas ser recomienda usar esta sintaxsis y asi evitar ubicacion por numero de filas o columnas  */
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 2rem;
+        grid-auto-flow: column;
+    }
+    
+}
+
+.contenido-principal {
+    /* grid-column: 2 / 3; */ /* forma normal */
+    grid-area: contenido;
+}
+
+.sidebar-1 {
+    /* grid-column: 1 / 2; */
+    grid-area: izquierda;
+}
